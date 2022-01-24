@@ -1,0 +1,8 @@
+ubuntu ansible_host=172.31.21.77 ansible_user=ubuntu ansible_ssh_private_key_file=controlansibletest.pem
+
+centos ansible_host=172.31.81.122 ansible_user=ubuntu ansible_ssh_private_key_file=controlansibletest.pem
+
+
+[websrvgrp]
+ubuntu
+centos

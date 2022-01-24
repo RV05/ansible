@@ -1,0 +1,18 @@
+---
+# tasks file for logrotation
+    - name: "Check if logrotate is installed in CentOs"
+      yum:
+        name: logrotate
+        state: present
+      when: ansible_os_family== "CentOs"
+
+    - name: "Check if logrotate is installed in ubuntu"
+      apt:
+        name: logrotate
+        state: present
+      when: ansible_os_family== "Debian"
+
+    - name: Deploy logrotate conf file for apt
+      template:
+        src: service.j2
+        dest: /etc/logrotate.d/apt

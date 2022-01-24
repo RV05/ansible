@@ -1,0 +1,102 @@
+2022-01-23 17:01:45,949 p=7496 u=ubuntu n=ansible | PLAY [check logrotation] *******************************************************************
+2022-01-23 17:01:45,961 p=7496 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************
+2022-01-23 17:01:47,584 p=7496 u=ubuntu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host centos should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-01-23 17:01:47,584 p=7496 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:01:47,680 p=7496 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:01:47,709 p=7496 u=ubuntu n=ansible | TASK [logrotation : Check if logrotate is installed in CentOs] *****************************
+2022-01-23 17:01:47,755 p=7496 u=ubuntu n=ansible | skipping: [ubuntu]
+2022-01-23 17:01:47,767 p=7496 u=ubuntu n=ansible | skipping: [centos]
+2022-01-23 17:01:47,777 p=7496 u=ubuntu n=ansible | TASK [logrotation : Check if logrotate is installed in ubuntu] *****************************
+2022-01-23 17:01:48,911 p=7496 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:01:49,069 p=7496 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:01:49,081 p=7496 u=ubuntu n=ansible | TASK [logrotation : Deploy logrotate conf file for apt] ************************************
+2022-01-23 17:01:49,813 p=7496 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:01:49,875 p=7496 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:01:49,878 p=7496 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************
+2022-01-23 17:01:49,879 p=7496 u=ubuntu n=ansible | centos                     : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-01-23 17:01:49,879 p=7496 u=ubuntu n=ansible | ubuntu                     : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-01-23 17:10:39,125 p=7842 u=ubuntu n=ansible | ERROR! the role 'logrotation' was not found in /home/ubuntu/test/playbooks/roles:/home/ubuntu/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/ubuntu/test/playbooks
+
+The error appears to be in '/home/ubuntu/test/playbooks/log_playbook.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - logrotation
+      ^ here
+
+2022-01-23 17:11:35,342 p=7857 u=ubuntu n=ansible | PLAY [check logrotation] *******************************************************************
+2022-01-23 17:11:35,354 p=7857 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************
+2022-01-23 17:11:36,935 p=7857 u=ubuntu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host centos should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-01-23 17:11:36,935 p=7857 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:11:37,018 p=7857 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:11:37,030 p=7857 u=ubuntu n=ansible | TASK [logrotation : Check if logrotate is installed in CentOs] *****************************
+2022-01-23 17:11:37,161 p=7857 u=ubuntu n=ansible | skipping: [ubuntu]
+2022-01-23 17:11:37,168 p=7857 u=ubuntu n=ansible | skipping: [centos]
+2022-01-23 17:11:37,179 p=7857 u=ubuntu n=ansible | TASK [logrotation : Check if logrotate is installed in ubuntu] *****************************
+2022-01-23 17:11:38,321 p=7857 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:11:38,476 p=7857 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:11:38,488 p=7857 u=ubuntu n=ansible | TASK [logrotation : Deploy logrotate conf file for apt] ************************************
+2022-01-23 17:11:39,221 p=7857 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:11:39,282 p=7857 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:11:39,285 p=7857 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************
+2022-01-23 17:11:39,285 p=7857 u=ubuntu n=ansible | centos                     : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-01-23 17:11:39,286 p=7857 u=ubuntu n=ansible | ubuntu                     : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-01-23 17:13:48,518 p=8145 u=ubuntu n=ansible | ERROR! the role 'logrotation' was not found in /home/ubuntu/test/playbooks/roles:/home/ubuntu/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/ubuntu/test/playbooks
+
+The error appears to be in '/home/ubuntu/test/playbooks/log_playbook.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - logrotation
+      ^ here
+
+2022-01-23 17:14:18,976 p=8151 u=ubuntu n=ansible | PLAY [check logrotation] *******************************************************************
+2022-01-23 17:14:18,988 p=8151 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************
+2022-01-23 17:14:20,581 p=8151 u=ubuntu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host centos should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-01-23 17:14:20,581 p=8151 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:14:20,634 p=8151 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:14:20,644 p=8151 u=ubuntu n=ansible | TASK [logrotation : Check if logrotate is installed in CentOs] *****************************
+2022-01-23 17:14:20,787 p=8151 u=ubuntu n=ansible | skipping: [ubuntu]
+2022-01-23 17:14:20,790 p=8151 u=ubuntu n=ansible | skipping: [centos]
+2022-01-23 17:14:20,801 p=8151 u=ubuntu n=ansible | TASK [logrotation : Check if logrotate is installed in ubuntu] *****************************
+2022-01-23 17:14:21,940 p=8151 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:14:22,099 p=8151 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:14:22,110 p=8151 u=ubuntu n=ansible | TASK [logrotation : Deploy logrotate conf file for apt] ************************************
+2022-01-23 17:14:22,840 p=8151 u=ubuntu n=ansible | ok: [centos]
+2022-01-23 17:14:22,899 p=8151 u=ubuntu n=ansible | ok: [ubuntu]
+2022-01-23 17:14:22,903 p=8151 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************
+2022-01-23 17:14:22,903 p=8151 u=ubuntu n=ansible | centos                     : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-01-23 17:14:22,903 p=8151 u=ubuntu n=ansible | ubuntu                     : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-01-23 17:14:31,270 p=8428 u=ubuntu n=ansible | ERROR! the role 'logrotation' was not found in /home/ubuntu/test/playbooks/roles:/home/ubuntu/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/ubuntu/test/playbooks
+
+The error appears to be in '/home/ubuntu/test/playbooks/log_playbook.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - logrotation
+      ^ here
+

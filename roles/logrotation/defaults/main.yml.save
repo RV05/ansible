@@ -1,0 +1,2 @@
+path: /var/log/apt/*.log
+# defaults file for logrotation

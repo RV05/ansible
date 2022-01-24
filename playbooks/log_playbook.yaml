@@ -1,0 +1,5 @@
+- name: check logrotation
+  hosts: websrvgrp
+  become: yes
+  roles:
+    - logrotation
